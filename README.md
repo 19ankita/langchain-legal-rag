@@ -2,23 +2,13 @@
 
 An end-to-end Retrieval-Augmented Generation (RAG) pipeline designed to apply semantic search and question-answering over unstructured legal corpora. This system automates information retrieval from massive volumes of complex legal contracts and policies, providing legal professionals with precise, contextualised insights to reduce document review time and enhance research accuracy.
 
-📌 Project Overview
+## Project Overview
 
 • Domain: Legal Tech / Generative AI
 • Objective: Implement document loading, text preprocessing, text chunking, vector embeddings, storage management, and dynamic retrieval combined with Language Generation Models (LLMs).
 • Framework: Powered by GenAI abstraction frameworks (LangChain or LlamaIndex).
 
-'' Repository Structure
-
-text
-├── RAG_Legal_Docs_[YourName].ipynb   # Core Jupyter Notebook containing the entire implementation
-├── requirements.txt                  # Python dependencies
-├── README.md                         # Project documentation
-└── .gitignore                        # Standard exclusions (ignores local datasets and cache files)
-Use code with caution.
-(Note: Per security and academic integrity guidelines, the raw datasets (corpus/ and benchmark/) are kept locally and are excluded from version control via .gitignore.)
-
-📊 Dataset Specifications
+## Dataset Specifications
 
 The pipeline processes a diverse corpus of text files (.txt) divided into four specific subfolders:
 • contractnli: Non-disclosure and confidentiality agreements.
@@ -27,7 +17,7 @@ The pipeline processes a diverse corpus of text files (.txt) divided into four s
 • privacy_qa: Question-answering evaluation pairs covering privacy policies.
 Evaluation benchmarks are mapped across matching JSON arrays (contractnli.json, cuad.json, maud.json, privacy_qa.json) specifying text spans and ground-truth answers.
 
-🛠️ System Architecture & Workflow
+## System Architecture & Workflow
 
 
 1. Data Preparation & EDA
@@ -46,29 +36,3 @@ Evaluation benchmarks are mapped across matching JSON arrays (contractnli.json, 
 • Contextual Retrieval: Context-matching function that pulls top-k relevant snippets matching legal queries.
 • Generation Engine: Generation prompt layer routing structured contexts directly into the LLM to output accurate answers.
 • Benchmark Evaluation: Metrics assessment parsing validation elements from the benchmark/ files to evaluate accuracy thresholds for both retrieval and language generation.
-
-🚀 Getting Started
-
-
-Prerequisites
-
-• Python 3.9+
-• Jupyter Notebook or JupyterLab
-
-Installation
-
-1. Clone this repository to your local directory:bash
-git clone https://github.com
-cd YOUR_REPO_NAME
-Use code with caution.
-2. Install the necessary dependencies:bash
-pip install -r requirements.txt
-Use code with caution.
-3. Place your assignment data folders (corpus/ and benchmark/) inside your local root workspace directory.
-4. Open the starter notebook environment:bash
-jupyter notebook RAG_Legal_Docs_[YourName].ipynb
-Use code with caution.
-
-⚖️ Academic Disclaimer
-
-This repository is submitted as part of an individual academic assessment. Replicating, copying, or distributing this codebase directly for coursework submissions violates plagiarism guidelines and is strictly prohibited.

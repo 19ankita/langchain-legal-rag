@@ -1,4 +1,4 @@
-﻿Legal Document RAG System
+ ## ﻿Legal Document RAG System
 
 An end-to-end Retrieval-Augmented Generation (RAG) pipeline designed to apply semantic search and question-answering over unstructured legal corpora. This system automates information retrieval from massive volumes of complex legal contracts and policies, providing legal professionals with precise, contextualised insights to reduce document review time and enhance research accuracy.
 
@@ -8,7 +8,7 @@ An end-to-end Retrieval-Augmented Generation (RAG) pipeline designed to apply se
 • Objective: Implement document loading, text preprocessing, text chunking, vector embeddings, storage management, and dynamic retrieval combined with Language Generation Models (LLMs).
 • Framework: Powered by GenAI abstraction frameworks (LangChain or LlamaIndex).
 
-📁 Repository Structure
+'' Repository Structure
 
 text
 ├── RAG_Legal_Docs_[YourName].ipynb   # Core Jupyter Notebook containing the entire implementation
